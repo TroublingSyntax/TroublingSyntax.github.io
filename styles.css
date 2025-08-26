@@ -160,3 +160,23 @@ a:hover {
     background-color: black;
     text-decoration: underline;
 }
+
+p.landing {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+p.resume {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+p.about {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+p.contact {
+    font-family: monospace;
+    font-size: 1rem;
+}
