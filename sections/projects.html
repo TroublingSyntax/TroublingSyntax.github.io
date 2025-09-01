@@ -20,7 +20,7 @@
 		<header>
 		<div>
 			<h1 class="masthead">Kevin Lewis</h1>
-			<h2 class="masthead">Aerospace Engineering | Mechatronics</h2>
+			<h2 class="masthead">Astrodynamics | Embedded Systems</h2>
 		</div>
 		<div>
 			<input id="nav-check" type="checkbox" hidden>
@@ -64,25 +64,14 @@
 			</li>
         </ul>
 
-	<section id="#research">
+	<section id="research">
 		<div class="meta">
 			<h2 class="title">Master's Thesis - Sparse Regression for Model Predictive Control</h2>
 			<h3 class="timeline">January 2025 - Present</h3>
+			<p class="summary">
+				Research in improvements to model predictive control for deep space asteroid missions. Discovered improvements in MPC performance and fuel savings as a result.
+			</p>
 		</div>
-		<p>
-			I decided to pursue a thesis based Master of Science at Purdue University. Under the supervision of Dr. Andrea Capannolo in the Astrodynamics and Space Applications focus, I chose to focus my thesis on control theory applied to small body missions. This is mainly because the future has potential to hold many asteroid and comet missions, and these environments are particularly challenging for spacecraft to traverse. I am researching the impact of sparse regression and discovery of nonlinear dynamics for control purposes in these small body environments. The goal is to improve on existing data-driven control methods by introducing sparsity, which addresses some of the largest challenges for onboard spacecraft control. Where noisy and sparse data onboard becomes an issue for more complex data-driven control methods such as neural networks, sparse representation of the nonlinear dynamics shines in the low data limit.
-		</p>
-		<div class="media">
-			<div>
-				<img width="600" height="400" src="/img/thesis/asteroid_plot.png" alt="The plots of a the controlled trajectory, it's station keeping reference path, and a ballistic orbit verification for the reconstructed dynamics">
-			</div>
-			<div>
-				<iframe width="600" height="400" src="https://www.youtube.com/embed/W-mK3r1Fg_U" frameborder="0"></iframe>
-			</div>
-		</div>
-		<p>
-			 As of August 2025, I have presented a manuscript on my research into sparse regression for discovering nonlinear dynamics in asteroid environments at the 2025 AAS/AIAA Astrodynamics Specialist Conference in Boston, Massachusetts. I had the great opportunity to present my research in an oral presentation, and also got the opportunity with leading exprets in the astrodynamics community from all parts of the world. The research so far has involved a thorough literature review, many MATLAB simulations, and much development on the various flavors of algorithms that enable sparse regression. I then developed a nonlinear model predictive control (nMPC) scheme to employ a station-kept orbit around a uniformly rotating asteroid using real mission data on asteroid 433 Eros. The <a href="https://www.researchgate.net/publication/394535017_Sequential_Sparse_Regression_and_Model_Predictive_Control_for_Missions_to_Small_Celestial_Bodies">pre-print</a> from the Astrodynamics Specialist Conference is currently on my ResearchGate profile and I encourage anyone to take a read as I'm always looking for feedback or suggestions on my research topic.
-		</p>
 		<div class="skills">
 			<h2>Skills Used</h2>
 		</div>
@@ -93,14 +82,41 @@
 			<li>Nonlinear Model Predictive Control</li>
 			<li>Machine Learning</li>
 		</ul>
+		<p>
+			I decided to pursue a thesis based Master of Science at Purdue University. Under the supervision of Dr. Andrea Capannolo in the Astrodynamics and Space Applications focus, I chose to focus my thesis on control theory applied to small body missions. This is mainly because the future has potential to hold many asteroid and comet missions, and these environments are particularly challenging for spacecraft to traverse. I am researching the impact of sparse regression and discovery of nonlinear dynamics for control purposes in these small body environments. The goal is to improve on existing data-driven control methods by introducing sparsity, which addresses some of the largest challenges for onboard spacecraft control. Where noisy and sparse data onboard becomes an issue for more complex data-driven control methods such as neural networks, sparse representation of the nonlinear dynamics shines in the low data limit.
+		</p>
+		<div class="media">
+			<div>
+				<img width="600" height="400" src="/img/thesis/asteroid_plot.png" alt="The plots of a the controlled trajectory, its station keeping reference path, and a ballistic orbit verification for the reconstructed dynamics">
+			</div>
+			<div>
+				<iframe width="600" height="400" src="https://www.youtube.com/embed/W-mK3r1Fg_U" frameborder="0"></iframe>
+			</div>
+		</div>
+		<p>
+			 As of August 2025, I have presented a manuscript on my research into sparse regression for discovering nonlinear dynamics in asteroid environments at the 2025 AAS/AIAA Astrodynamics Specialist Conference in Boston, Massachusetts. I had the great opportunity to present my research in an oral presentation, and also got the opportunity with leading exprets in the astrodynamics community from all parts of the world. The research so far has involved a thorough literature review, many MATLAB simulations, and much development on the various flavors of algorithms that enable sparse regression. I then developed a nonlinear model predictive control (nMPC) scheme to employ a station-kept orbit around a uniformly rotating asteroid using real mission data on asteroid 433 Eros. The <a href="https://www.researchgate.net/publication/394535017_Sequential_Sparse_Regression_and_Model_Predictive_Control_for_Missions_to_Small_Celestial_Bodies">pre-print</a> from the Astrodynamics Specialist Conference is currently on my ResearchGate profile and I encourage anyone to take a read as I'm always looking for feedback or suggestions on my research topic.
+		</p>
 	</section>
 
 	<section id="stm32_dev_board">
 		<div class="meta">
 			<h2 class="title">STM32F031 Microcontroller Development Board</h2>
 			<h3 class="timeline">July 2024 - June 2025</h3>
+			<p class="summary">
+				Designed and manufactured a custom STM32F031 development board with USB, CAN, and I2C to accelerate embedded prototyping and testing. I assembled hardware, validated communication, and enabled JTAG programming via STM32 CubeIDE.
+			</p>
 		</div>
-		<p>The goal of this project was to create a personal development board for STM32F0 series microcontrollers. There already exists a series of development boards (Nucleo boards) for this, but I am a fan of having full control over the types of peripherals onboard. I also like to constrain the board's capability to it's application, so being able to change the PCB on my own was important. This first prototype board was meant to act as a starting point to it's variations. I included some of the most common communication protocols such as USB, CAN, and I2C to enable fast prototyping for other projects. I also kept the majority of the GPIO's unallocated for full design freedom. The intent for the future development of the development board is to tailor it to future robotics projects, where it may be appropriate to add power management circuits or driver circuits for actuators. As suggested by the project alias "Anvil", this first prototype is revision A and it is my intention to continue developing this breakout board in the future.</p>
+		<div class="skills">
+			<h2>Skills Used</h2>
+		</div>
+		<ul class="skills">
+			<li>KiCad PCB design</li>
+			<li>Electrical Component Datasheet review</li>
+			<li>Basic electrical design for embedded CPU's</li>
+			<li>Troubleshooting for communication protocols</li>
+			<li>Low-level C programming language for hardware abstraction</li>
+		</ul>
+		<p>The goal of this project was to create a personal development board for STM32F0 series microcontrollers. There already exists a series of development boards (Nucleo boards) for this, but I am a fan of having full control over the types of peripherals onboard. I also like to constrain the board's capability to its application, so being able to change the PCB on my own was important. This first prototype board was meant to act as a starting point to its variations. I included some of the most common communication protocols such as USB, CAN, and I2C to enable fast prototyping for other projects. I also kept the majority of the GPIO's unallocated for full design freedom. The intent for the future development of the development board is to tailor it to future robotics projects, where it may be appropriate to add power management circuits or driver circuits for actuators. As suggested by the project alias "Anvil", this first prototype is revision A and it is my intention to continue developing this breakout board in the future. A public repository to the KiCad files can found on the <a href="https://github.com/TroublingSyntax/anvil">Anvil project page</a> on my GitHub.</p>
 		<div class="media">
 			<div>
 				<img width="600" height="400" src="/img/stm32/anvil_render.png" alt="KiCad render of Development Board">
@@ -116,26 +132,30 @@
 			</div>
 		</div>
 		<p>The Anvil project has been fun to work on and has taught me a lot along the way. I brought an idea for a fully customizable and simple breakout board and brought it from part selection all the way to an in-house assembly of the first prototypes. The outcome of this first revision is development board that can be interacted with through many communication protocols, full GPIO usage and is currently programmable through the STM32 JTAG adapter and the STM32 CubeIDE software. The near future work for Anvil is creating a small static library for hardware interaction on the GPIO's that is tailored to the development board, to be made open-source as soon as it is finished.</p>
-		<div class="skills">
-			<h2>Skills Used</h2>
-		</div>
-		<ul class="skills">
-			<li>KiCad PCB design</li>
-			<li>Electrical Component Datasheet review</li>
-			<li>Basic electrical design for embedded CPU's</li>
-			<li>Troubleshooting for communication protocols</li>
-			<li>Low-level C programming language for hardware abstraction</li>
-		</ul>
-
 	</section>
 
 	<section id="MPC_relative">
 		<div class="meta">
 			<h2 class="title">Rendezvous, Proximity Operations and Docking with Model Predictive Control (MPC)</h2>
 			<h3 class="timeline">January 2025 - May 2025</h3>
+			<p class="summary">
+				Formulated a two-phase RPOD mission with an optimal LEO to GEO transfer followed by MPC-based proximity operations under KOZ and LOS constraints. Applied Pontryagin’s Minimum Principle for minimum-fuel transfer and demonstrated constrained docking performance in simulation.
+			</p>
 		</div>
+		<div class="skills">
+			<h2>Skills Used</h2>
+		</div>
+		<ul class="skills">
+			<li>Orbital Motion in the Two Body Problem</li>
+			<li>Relative Orbital Motion</li>
+			<li>Pontryagin's Minimum Principle</li>
+			<li>Optimal Control Theory</li>
+			<li>Model Predictive Control</li>
+			<li>Timeline Management</li>
+			<li>Project Outcome Communication</li>
+		</ul>
 		<p>
-			The RPOD problem presented here is a course project completed for the AAE 59000 - Applied Control in Astronautics course taught at Purdue University. The goal was to come up wtih a control approach to a spaceflight problem of our choosing. For my project, I chose to target the increasingly common task of docking with Earth orbiting vehicles for maitanence and refueling. In this case, the mission scenario is loosely based on the MAV-1 refueling mission to the Intelsat-901 Satellite positioned in geostationary orbit (GEO). First, an optimal set of maneuvers raise the orbit of the chaser spacecraft from a low Earth orbit (LEO) to GEO. Then, proximity operations are performed in relative dynamics using model predictive control to respect various mission constraints for the docking procedure.
+			The RPOD problem presented here is a course project completed for the AAE 59000 - Applied Control in Astronautics course taught at Purdue University. The goal was to come up wtih a control approach to a spaceflight problem of our choosing. For my project, I chose to target the increasingly common task of docking with Earth orbiting vehicles for maitenence and refueling. In this case, the mission scenario is loosely based on the MAV-1 refueling mission to the Intelsat-901 Satellite positioned in geostationary orbit (GEO). First, an optimal set of maneuvers raise the orbit of the chaser spacecraft from a low Earth orbit (LEO) to GEO. Then, proximity operations are performed in relative dynamics using model predictive control to respect various mission constraints for the docking procedure.
 		</p>
 		<div class="media">
 			<div>
@@ -145,29 +165,16 @@
 		<p>
 			The orbit raising maneuvers were determined by using Pontryagin's Minimum Principle to find the optimal minimum-fuel solution for rendezvous with the GEO satellite. A safety keep out zone (KOZ) was employed during proximity operations to avoid collision with the target spacecraft, as well as a Line of Sight constraint that is common among many docking operations. The <a href="/resources/AAE_590_ACA_Project_Technical_Report.pdf">project report</a> is available for download as a PDF.
 		</p>
-		<div class="skills">
-			<h2>Skills Used</h2>
-		</div>
-		<ul class="skills">
-			<li>Timeline Management</li>
-			<li>Project Outcome Communication</li>
-			<li>Orbital Motion in the Two Body Problem</li>
-			<li>Relative Orbital Motion</li>
-			<li>Pontryagin's Minimum Principle</li>
-			<li>Optimal Control Theory</li>
-			<li>Model Predictive Control</li>
-		</ul>
 	</section>
 
 	<section id="caterpillar_second">
 		<div class="meta">
 			<h2 class="title">Caterpillar Internship 2 - Automation Feature Development</h2>
 			<h3 class="timeline">May 2024 - August 2024</h3>
+			<p class="summary">
+				Implemented an automation feature from scratch for hydraulic excavators. Work included simulation, code development, build process, hardware testing, and documentation of the results to my superiors.
+			</p>
 		</div>
-		<p><em>Due to the propietary nature of most project media and resources, I have chosen to omit any images taken over my summer internship at Caterpillar.</em></p>
-		<p>
-			My second internship at Caterpillar occurred in the following summer with respect to the first, taking place with exactly the same group as before. After returning, the position was similar but my summer project was significantly different. instead of handling existing software's bugs, I was tasks with designing a new automation feature on our medium sized hydraulic excavators. Due to the propietary nature of the feature, I will leave out the details of what this feature was. It is worth noting that my contributions were different as well. Because I was builing a new feature from scratch and I have already had months of experience with our group's various tools and build chains, I was given more independence to work on my own. This meant I handled more of the meta for the feature such as the version control, documentation and build chain process for iterations of the new feature. More specifically, my general workflow consisted of making changes in simulation, creating C code for those features, and figuring out how to embed the new feature with the rest of our codebase for core hydrualic motion control. I would then use our extensive build chain tools to compile and link executables that could be deployed to real hardware, where I was also responsible for testing, data collection and reporting to my managers the current progress and issues encountered in the feature developments. There were a large range of skills developed during this project, but I would emphasize that I was given a lot of independence as an intern and this forced me to learn many things on my own, building my skills as a software engineer even more so than getting direct guidance and help. The independence has helped me discover the most fundamental skills in software development; not necessarliy how to do each and every process perfectly, but rather how I can learn something completely new with little outside help by knowing what things to look for and where to admit that I may need some guidance to avoid creating issues in the future. This fundamental skill, I feel, is the single most important lesson I took from this experience as it translates to any other software role no matter the tools used or the application in use.
-		</p>
 		<div class="skills">
 			<h2>Skills Used</h2>
 		</div>
@@ -180,13 +187,33 @@
 			<li>CMake based build chains, including compilers and linkers</li>
 			<li>New feature embedded software development workflow from formulation to deployment</li>
 		</ul>
+		<p><em>Due to the proprietary nature of most project media and resources, I have chosen to omit any images taken over my summer internship at Caterpillar.</em></p>
+		<p>
+			My second internship at Caterpillar occurred in the following summer with respect to the first, taking place with exactly the same group as before. After returning, the position was similar but my summer project was significantly different. instead of handling existing software's bugs, I was tasks with designing a new automation feature on our medium sized hydraulic excavators. Due to the proprietary nature of the feature, I will leave out the details of what this feature was. It is worth noting that my contributions were different as well. Because I was builing a new feature from scratch and I have already had months of experience with our group's various tools and build chains, I was given more independence to work on my own. This meant I handled more of the meta for the feature such as the version control, documentation and build chain process for iterations of the new feature. More specifically, my general workflow consisted of making changes in simulation, creating C code for those features, and figuring out how to embed the new feature with the rest of our codebase for core hydrualic motion control. I would then use our extensive build chain tools to compile and link executables that could be deployed to real hardware, where I was also responsible for testing, data collection and reporting to my managers the current progress and issues encountered in the feature developments. There were a large range of skills developed during this project, but I would emphasize that I was given a lot of independence as an intern and this forced me to learn many things on my own, building my skills as a software engineer even more so than getting direct guidance and help. The independence has helped me discover the most fundamental skills in software development; not necessarliy how to do each and every process perfectly, but rather how I can learn something completely new with little outside help by knowing what things to look for and where to admit that I may need some guidance to avoid creating issues in the future. This fundamental skill, I feel, is the single most important lesson I took from this experience as it translates to any other software role no matter the tools used or the application in use.
+		</p>
 	</section>
 
 	<section id="bonehead">
 		<div class="meta">
 			<h2 class="title">Quadruped Robot (bonehead)</h2>
 			<h3 class="timeline">August 2023 - May 2024</h3>
+			<p class="summary">
+				Built a ROS2-based quadruped with 16 DoF, digital twin simulation, and real-time teleoperation on a $500 budget. Implemented Arduino task scheduling, USB comms to Raspberry Pi, and end-to-end software bring-up with sensing and visualization.
+			</p>
 		</div>
+		<div class="skills">
+			<h2>Skills Used</h2>
+		</div>
+		<ul class="skills">
+			<li>Robot Operating System (ROS) API</li>
+			<li>C++</li>
+			<li>Python</li>
+			<li>XML</li>
+			<li>Bash Scripting</li>
+			<li>Embeded Linux</li>
+			<li>Electrical Design for Microcontrollers</li>
+			<li>Debugging with hardware in the loop</li>
+		</ul>
 		<p>The quadruped robot, affectionately nicknamed "bonehead", was the work of myself, Ben Crowninshield and Tyler Stewart during our senior capstone project at Northern Illinois University. The goal of bonehead was to take a first step toward an assistive robot that can have the required dexterity for assisting humans on construction sites in the future. A purposely ambitious project, our team had the goal of finishing a proof of concept using a small budget of only $500 to act as a starting point for future capstone projects or undergraduate research.</p>
 		<p>My contributions to bonehead were the electrical and programming aspects of the robot alongside Tyler Stewart. We used a combination of Arduino for actuator control and sensor data processing in combination with a Raspberry Pi 4 Model B to host the main operation of the quadruped's actions. My focus in particular was on the development of the task scheduling for the Arduino MCU, the communication over USB with the Raspberry Pi, and the software to control the robot, which I chose to implement through the Robot Operating System (ROS) 2 Client Library.</p>
 		<p>Bonehead began in late Fall 2023 and concluded in May of 2024, with our team managing to build a complete prototype to present during our school's capstone demonstration event. The finished prototype had the following functionalities:</p>
@@ -194,7 +221,7 @@
 			<li>16 DoF motion consisting of four legs that included a wheel for faster travel</li>
 			<li>Digital Emulation of the actuators in real-time using the ROS2 Rviz utility</li>
 			<li>Digital Twin simulation using the Gazebo simulation environment</li>
-			<li>Real life control via blueooth and teleoperation</li>
+			<li>Real life control via bluetooth and teleoperation</li>
 			<li>LiDAR and ultrasonic ranging for environment awareness</li>
 			<li>ROS2 software and Arduino packages started from scratch and completely open source</li>
 		</ul>
@@ -213,30 +240,16 @@
 			</div>
 		</div>
 		<p>This project was a true learning experience for me as our team made the intentional decision to "bite off more than we could chew" to teach ourselves the important skill of time management and priority tasking when working in team environments. The outcome was a close bond formed among our team members and an excellent experience that resulted in a functional robot prototype. The link to the archived <a href="https://github.com/TroublingSyntax/bonehead">repository</a> for bonehead can be found on my personal GitHub account.</p>
-		<div class="skills">
-			<h2>Skills Used</h2>
-		</div>
-		<ul class="skills">
-			<li>Robot Operating System (ROS) API</li>
-			<li>C++</li>
-			<li>Python</li>
-			<li>XML</li>
-			<li>Bash Scripting</li>
-			<li>Embeded Linux</li>
-			<li>Electrical Design for Microcontrollers</li>
-			<li>Debugging with hardware in the loop</li>
-		</ul>
 	</section>
 
 	<section id="caterpillar_first">
 		<div class="meta">
 			<h2 class="title">Caterpillar Internship 1 - Hydraulic Drift Solution</h2>
 			<h3 class="timeline">May 2023 - August 2023</h3>
+			<p class="summary">
+				Diagnosed and corrected an excavator swing-brake drift issue by developing, simulating, and validating a control fix in MATLAB/C with hardware-in-the-loop testing. Delivered field-testable builds through DevOps workflows and documented results for the controls team.
+			</p>
 		</div>
-		<p><em>Due to the propietary nature of most project media and resources, I have chosen to omit any images taken over my summer internship at Caterpillar.</em></p>
-		<p>
-			My first internship with Caterpillar came from an interest in software development and control theory, two passions that I have always possessed. I joined the Advanced Controls group for the hydraulic excavator product line, which handles the core motion control of the excavators from an embedded software development. As a summer internship project, my main task was addressing a well-documented issue with our software when controling the swinging motion of the excavator. During certain combinations of motion on the machine, the swing brake mechanism that stops the excavator from swiveling on it's tracks when the operator does not intend it does not function which results in a "hydraulic drift" that swings the machine with no operator input. Throughout the summar internship, I had many duties ranging from data collection from customer reports and our dealership network, to creating, simulating and testing a solution to the bug on real hardware. This project was my first introduction to professional software development, and I was absolutely hooked on the day-to-day tasks of an embedded software developer. The tasks ranging from code development in MATLAB and C, to build chain tools and software validation by hands-on machine implementation, there was nothing that I did not like about this role. It was an excellent early experience, and more than anyhting else I learned important lessons about working in a close software team environment, including how to use distributed version control software such as Git in a professional setting as well as the Dev-Ops workflow that in common  in workplaces today.
-		</p>
 		<div class="skills">
 			<h2>Skills Used</h2>
 		</div>
@@ -250,6 +263,10 @@
 			<li>Hydraulic Schematic Reading and Comprehension</li>
 			<li>Data Analysis tools</li>
 		</ul>
+		<p><em>Due to the proprietary nature of most project media and resources, I have chosen to omit any images taken over my summer internship at Caterpillar.</em></p>
+		<p>
+			My first internship with Caterpillar came from an interest in software development and control theory, two passions that I have always possessed. I joined the Advanced Controls group for the hydraulic excavator product line, which handles the core motion control of the excavators from an embedded software development. As a summer internship project, my main task was addressing a well-documented issue with our software when controling the swinging motion of the excavator. During certain combinations of motion on the machine, the swing brake mechanism that stops the excavator from swiveling on its tracks when the operator does not intend it does not function which results in a "hydraulic drift" that swings the machine with no operator input. Throughout the summer internship, I had many duties ranging from data collection from customer reports and our dealership network, to creating, simulating and testing a solution to the bug on real hardware. This project was my first introduction to professional software development, and I was absolutely hooked on the day-to-day tasks of an embedded software developer. The tasks ranging from code development in MATLAB and C, to build chain tools and software validation by hands-on machine implementation, there was nothing that I did not like about this role. It was an excellent early experience, and more than anyhting else I learned important lessons about working in a close software team environment, including how to use distributed version control software such as Git in a professional setting as well as the Dev-Ops workflow that in common  in workplaces today.
+		</p>
 	</section>
 
 	<script src="/scripts/projects.js"></script>
