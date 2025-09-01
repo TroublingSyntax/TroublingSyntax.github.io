@@ -3,23 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- styling -->
+	<link rel="icon" href="/img/icons/favicon.ico">
+	<link rel="stylesheet" href="/css/global.css">
+	<link rel="stylesheet" href="/css/projects.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+	</style>
+
 	<title>Kevin Lewis | Engineering Portfolio</title>
 </head>
 
 <body>
-	<header>
-		<h1>Kevin Lewis <br/> Aerospace Engineering | Mechatronics</h1>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/sections/resume.html">Resume</a>
-			<a href="/sections/projects.html">Projects</a>
-			<a href="/sections/about.html">About</a>
-			<a href="/sections/contact.html">Contact</a>
-		</nav>
-	</header>
+	<div class="masthead">
+		<header>
+		<div>
+			<h1 class="masthead">Kevin Lewis</h1>
+			<h2 class="masthead">Aerospace Engineering | Mechatronics</h2>
+		</div>
+		<div>
+			<input id="nav-check" type="checkbox" hidden>
+			<label id="nav-btn" for="nav-check">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+
+			<nav class="masthead">
+				<a href="/">Home</a>
+				<a href="/sections/resume.html">Resume</a>
+				<a href="/sections/projects.html">Projects</a>
+				<a href="/sections/about.html">About</a>
+				<a href="/sections/contact.html">Contact</a>
+			</nav>
+		</div>
+		</header>
+	</div>
+
 	<h2>Projects</h2>
-	<p>Here you can find some of my technical projects I've either been a part of or worked on by myself. If you have any particular questions, please feel free to <a href="/sections/contact.html">contact me</a> for more details.</p>
-		<ul>
+	<p>Here you can find some of my technical projects I've either been a part of or worked on by myself. Click on a project from the list below to jump to that project. If you have any particular questions, please feel free to <a href="/sections/contact.html">contact me</a> for more details.</p>
+		<ul class="project-list">
 			<li>
 				<a href="#research">Master's Thesis - Sparse Regression for Model Predictive Control</a>
 			</li>
@@ -41,18 +65,28 @@
         </ul>
 
 	<section id="#research">
-		<h2>Master's Thesis - Sparse Regression for Model Predictive Control</h2>
-		<h3>January 2025 - Present</h3>
+		<div class="meta">
+			<h2 class="title">Master's Thesis - Sparse Regression for Model Predictive Control</h2>
+			<h3 class="timeline">January 2025 - Present</h3>
+		</div>
 		<p>
 			I decided to pursue a thesis based Master of Science at Purdue University. Under the supervision of Dr. Andrea Capannolo in the Astrodynamics and Space Applications focus, I chose to focus my thesis on control theory applied to small body missions. This is mainly because the future has potential to hold many asteroid and comet missions, and these environments are particularly challenging for spacecraft to traverse. I am researching the impact of sparse regression and discovery of nonlinear dynamics for control purposes in these small body environments. The goal is to improve on existing data-driven control methods by introducing sparsity, which addresses some of the largest challenges for onboard spacecraft control. Where noisy and sparse data onboard becomes an issue for more complex data-driven control methods such as neural networks, sparse representation of the nonlinear dynamics shines in the low data limit.
 		</p>
-		<img src="/img/thesis/asteroid_plot.png" alt="The plots of a the controlled trajectory, it's station keeping reference path, and a ballistic orbit verification for the reconstructed dynamics">
-		<iframe width="840" height="630" src="https://www.youtube.com/embed/W-mK3r1Fg_U" frameborder="0"></iframe>
+		<div class="media">
+			<div>
+				<img width="600" height="400" src="/img/thesis/asteroid_plot.png" alt="The plots of a the controlled trajectory, it's station keeping reference path, and a ballistic orbit verification for the reconstructed dynamics">
+			</div>
+			<div>
+				<iframe width="600" height="400" src="https://www.youtube.com/embed/W-mK3r1Fg_U" frameborder="0"></iframe>
+			</div>
+		</div>
 		<p>
 			 As of August 2025, I have presented a manuscript on my research into sparse regression for discovering nonlinear dynamics in asteroid environments at the 2025 AAS/AIAA Astrodynamics Specialist Conference in Boston, Massachusetts. I had the great opportunity to present my research in an oral presentation, and also got the opportunity with leading exprets in the astrodynamics community from all parts of the world. The research so far has involved a thorough literature review, many MATLAB simulations, and much development on the various flavors of algorithms that enable sparse regression. I then developed a nonlinear model predictive control (nMPC) scheme to employ a station-kept orbit around a uniformly rotating asteroid using real mission data on asteroid 433 Eros. The <a href="https://www.researchgate.net/publication/394535017_Sequential_Sparse_Regression_and_Model_Predictive_Control_for_Missions_to_Small_Celestial_Bodies">pre-print</a> from the Astrodynamics Specialist Conference is currently on my ResearchGate profile and I encourage anyone to take a read as I'm always looking for feedback or suggestions on my research topic.
 		</p>
-		<h2>Skills Used</h2>
-		<ul>
+		<div class="skills">
+			<h2>Skills Used</h2>
+		</div>
+		<ul class="skills">
 			<li>Object Oriented Programming in MATLAB</li>
 			<li>MATLAB Scripting</li>
 			<li>Irregular Gravity Modeling - Polyhedron, Spherical Harmonics</li>
@@ -62,16 +96,30 @@
 	</section>
 
 	<section id="stm32_dev_board">
-		<h2>STM32F031 Microcontroller Development Board</h2>
-		<h3>July 2024 - June 2025</h3>
+		<div class="meta">
+			<h2 class="title">STM32F031 Microcontroller Development Board</h2>
+			<h3 class="timeline">July 2024 - June 2025</h3>
+		</div>
 		<p>The goal of this project was to create a personal development board for STM32F0 series microcontrollers. There already exists a series of development boards (Nucleo boards) for this, but I am a fan of having full control over the types of peripherals onboard. I also like to constrain the board's capability to it's application, so being able to change the PCB on my own was important. This first prototype board was meant to act as a starting point to it's variations. I included some of the most common communication protocols such as USB, CAN, and I2C to enable fast prototyping for other projects. I also kept the majority of the GPIO's unallocated for full design freedom. The intent for the future development of the development board is to tailor it to future robotics projects, where it may be appropriate to add power management circuits or driver circuits for actuators. As suggested by the project alias "Anvil", this first prototype is revision A and it is my intention to continue developing this breakout board in the future.</p>
-		<img src="/img/stm32/anvil_render.png" alt="KiCad render of Development Board">
-		<img src="/img/stm32/anvil_diagram.png" alt="KiCad Diagram of components and connections">
-		<img src="/img/stm32/anvil_schematic.png" alt="KiCad PCB Board Layout">
-		<iframe width="840" height="630" src="https://www.youtube.com/embed/nlcBct2amdI" frameborder="0"></iframe>
+		<div class="media">
+			<div>
+				<img width="600" height="400" src="/img/stm32/anvil_render.png" alt="KiCad render of Development Board">
+			</div>
+			<div>
+				<img width="600" height="400" src="/img/stm32/anvil_diagram.png" alt="KiCad Diagram of components and connections">
+			</div>
+			<div>
+				<img width="600" height="400" src="/img/stm32/anvil_schematic.png" alt="KiCad PCB Board Layout">
+			</div>
+			<div>
+				<iframe width="600" height="400"  src="https://www.youtube.com/embed/nlcBct2amdI" frameborder="0"></iframe>
+			</div>
+		</div>
 		<p>The Anvil project has been fun to work on and has taught me a lot along the way. I brought an idea for a fully customizable and simple breakout board and brought it from part selection all the way to an in-house assembly of the first prototypes. The outcome of this first revision is development board that can be interacted with through many communication protocols, full GPIO usage and is currently programmable through the STM32 JTAG adapter and the STM32 CubeIDE software. The near future work for Anvil is creating a small static library for hardware interaction on the GPIO's that is tailored to the development board, to be made open-source as soon as it is finished.</p>
-		<h2>Skills Used</h2>
-		<ul>
+		<div class="skills">
+			<h2>Skills Used</h2>
+		</div>
+		<ul class="skills">
 			<li>KiCad PCB design</li>
 			<li>Electrical Component Datasheet review</li>
 			<li>Basic electrical design for embedded CPU's</li>
@@ -82,17 +130,25 @@
 	</section>
 
 	<section id="MPC_relative">
-		<h2>Rendezvous, Proximity Operations and Docking with Model Predictive Control (MPC)</h2>
-		<h3>January 2025 - May 2025</h3>
+		<div class="meta">
+			<h2 class="title">Rendezvous, Proximity Operations and Docking with Model Predictive Control (MPC)</h2>
+			<h3 class="timeline">January 2025 - May 2025</h3>
+		</div>
 		<p>
 			The RPOD problem presented here is a course project completed for the AAE 59000 - Applied Control in Astronautics course taught at Purdue University. The goal was to come up wtih a control approach to a spaceflight problem of our choosing. For my project, I chose to target the increasingly common task of docking with Earth orbiting vehicles for maitanence and refueling. In this case, the mission scenario is loosely based on the MAV-1 refueling mission to the Intelsat-901 Satellite positioned in geostationary orbit (GEO). First, an optimal set of maneuvers raise the orbit of the chaser spacecraft from a low Earth orbit (LEO) to GEO. Then, proximity operations are performed in relative dynamics using model predictive control to respect various mission constraints for the docking procedure.
 		</p>
-		<img src="/img/mpc_rendezvous/MPC_Rendezvous_One_Page_Summary.png" alt="One Page Summary of MPC Rendezvous Project">
+		<div class="media">
+			<div>
+				<img width="600" height="400" src="/img/mpc_rendezvous/MPC_Rendezvous_One_Page_Summary.png" alt="One Page Summary of MPC Rendezvous Project">
+			</div>
+		</div>
 		<p>
 			The orbit raising maneuvers were determined by using Pontryagin's Minimum Principle to find the optimal minimum-fuel solution for rendezvous with the GEO satellite. A safety keep out zone (KOZ) was employed during proximity operations to avoid collision with the target spacecraft, as well as a Line of Sight constraint that is common among many docking operations. The <a href="/resources/AAE_590_ACA_Project_Technical_Report.pdf">project report</a> is available for download as a PDF.
 		</p>
-		<h2>Skills Used</h2>
-		<ul>
+		<div class="skills">
+			<h2>Skills Used</h2>
+		</div>
+		<ul class="skills">
 			<li>Timeline Management</li>
 			<li>Project Outcome Communication</li>
 			<li>Orbital Motion in the Two Body Problem</li>
@@ -104,14 +160,18 @@
 	</section>
 
 	<section id="caterpillar_second">
-		<h2>Caterpillar Internship 2 - Automation Feature Development</h2>
-		<h3>May 2024 - August 2024</h3>
+		<div class="meta">
+			<h2 class="title">Caterpillar Internship 2 - Automation Feature Development</h2>
+			<h3 class="timeline">May 2024 - August 2024</h3>
+		</div>
 		<p><em>Due to the propietary nature of most project media and resources, I have chosen to omit any images taken over my summer internship at Caterpillar.</em></p>
 		<p>
 			My second internship at Caterpillar occurred in the following summer with respect to the first, taking place with exactly the same group as before. After returning, the position was similar but my summer project was significantly different. instead of handling existing software's bugs, I was tasks with designing a new automation feature on our medium sized hydraulic excavators. Due to the propietary nature of the feature, I will leave out the details of what this feature was. It is worth noting that my contributions were different as well. Because I was builing a new feature from scratch and I have already had months of experience with our group's various tools and build chains, I was given more independence to work on my own. This meant I handled more of the meta for the feature such as the version control, documentation and build chain process for iterations of the new feature. More specifically, my general workflow consisted of making changes in simulation, creating C code for those features, and figuring out how to embed the new feature with the rest of our codebase for core hydrualic motion control. I would then use our extensive build chain tools to compile and link executables that could be deployed to real hardware, where I was also responsible for testing, data collection and reporting to my managers the current progress and issues encountered in the feature developments. There were a large range of skills developed during this project, but I would emphasize that I was given a lot of independence as an intern and this forced me to learn many things on my own, building my skills as a software engineer even more so than getting direct guidance and help. The independence has helped me discover the most fundamental skills in software development; not necessarliy how to do each and every process perfectly, but rather how I can learn something completely new with little outside help by knowing what things to look for and where to admit that I may need some guidance to avoid creating issues in the future. This fundamental skill, I feel, is the single most important lesson I took from this experience as it translates to any other software role no matter the tools used or the application in use.
 		</p>
-		<h2>Skills Used</h2>
-		<ul>
+		<div class="skills">
+			<h2>Skills Used</h2>
+		</div>
+		<ul class="skills">
 			<li>Git</li>
 			<li>Azure DevOps</li>
 			<li>Data Analysis Tools</li>
@@ -123,8 +183,10 @@
 	</section>
 
 	<section id="bonehead">
-		<h2>Quadruped Robot (bonehead)</h2>
-		<h3>August 2023 - May 2024</h3>
+		<div class="meta">
+			<h2 class="title">Quadruped Robot (bonehead)</h2>
+			<h3 class="timeline">August 2023 - May 2024</h3>
+		</div>
 		<p>The quadruped robot, affectionately nicknamed "bonehead", was the work of myself, Ben Crowninshield and Tyler Stewart during our senior capstone project at Northern Illinois University. The goal of bonehead was to take a first step toward an assistive robot that can have the required dexterity for assisting humans on construction sites in the future. A purposely ambitious project, our team had the goal of finishing a proof of concept using a small budget of only $500 to act as a starting point for future capstone projects or undergraduate research.</p>
 		<p>My contributions to bonehead were the electrical and programming aspects of the robot alongside Tyler Stewart. We used a combination of Arduino for actuator control and sensor data processing in combination with a Raspberry Pi 4 Model B to host the main operation of the quadruped's actions. My focus in particular was on the development of the task scheduling for the Arduino MCU, the communication over USB with the Raspberry Pi, and the software to control the robot, which I chose to implement through the Robot Operating System (ROS) 2 Client Library.</p>
 		<p>Bonehead began in late Fall 2023 and concluded in May of 2024, with our team managing to build a complete prototype to present during our school's capstone demonstration event. The finished prototype had the following functionalities:</p>
@@ -136,13 +198,25 @@
 			<li>LiDAR and ultrasonic ranging for environment awareness</li>
 			<li>ROS2 software and Arduino packages started from scratch and completely open source</li>
 		</ul>
-		<img src="/img/bonehead/bonehead_cad.jpg" alt="Solidworks Render of the Quadruped Robot Assembly">
-		<img src="/img/bonehead/prototype_workbench.jpg" alt="Completed Quadruped Robot on our team's workbench">
-		<img src="/img/bonehead/bonehead_rviz2_demo_day.jpg" alt="Presenting the Robot on NIU's Senior Design Demo Day with the active data streamed to RViz2">
-		 <iframe width="840" height="630" src="https://www.youtube.com/embed/biSRq9eivOM" frameborder="0"></iframe>
+		<div class="media">
+			<div>
+				<img width="600" height="400" src="/img/bonehead/bonehead_cad.jpg" alt="Solidworks Render of the Quadruped Robot Assembly">
+			</div>
+			<div>
+				<img width="600" height="400" src="/img/bonehead/prototype_workbench.jpg" alt="Completed Quadruped Robot on our team's workbench">
+			</div>
+			<div>
+				<img width="600" height="400" src="/img/bonehead/bonehead_rviz2_demo_day.jpg" alt="Presenting the Robot on NIU's Senior Design Demo Day with the active data streamed to RViz2">
+			</div>
+			<div>
+				<iframe width="600" height="400"  src="https://www.youtube.com/embed/biSRq9eivOM" frameborder="0"></iframe>
+			</div>
+		</div>
 		<p>This project was a true learning experience for me as our team made the intentional decision to "bite off more than we could chew" to teach ourselves the important skill of time management and priority tasking when working in team environments. The outcome was a close bond formed among our team members and an excellent experience that resulted in a functional robot prototype. The link to the archived <a href="https://github.com/TroublingSyntax/bonehead">repository</a> for bonehead can be found on my personal GitHub account.</p>
-		<h2>Skills Used</h2>
-		<ul>
+		<div class="skills">
+			<h2>Skills Used</h2>
+		</div>
+		<ul class="skills">
 			<li>Robot Operating System (ROS) API</li>
 			<li>C++</li>
 			<li>Python</li>
@@ -155,14 +229,18 @@
 	</section>
 
 	<section id="caterpillar_first">
-		<h2>Caterpillar Internship 1 - Hydraulic Drift Solution</h2>
-		<h3>May 2023 - August 2023</h3>
+		<div class="meta">
+			<h2 class="title">Caterpillar Internship 1 - Hydraulic Drift Solution</h2>
+			<h3 class="timeline">May 2023 - August 2023</h3>
+		</div>
 		<p><em>Due to the propietary nature of most project media and resources, I have chosen to omit any images taken over my summer internship at Caterpillar.</em></p>
 		<p>
 			My first internship with Caterpillar came from an interest in software development and control theory, two passions that I have always possessed. I joined the Advanced Controls group for the hydraulic excavator product line, which handles the core motion control of the excavators from an embedded software development. As a summer internship project, my main task was addressing a well-documented issue with our software when controling the swinging motion of the excavator. During certain combinations of motion on the machine, the swing brake mechanism that stops the excavator from swiveling on it's tracks when the operator does not intend it does not function which results in a "hydraulic drift" that swings the machine with no operator input. Throughout the summar internship, I had many duties ranging from data collection from customer reports and our dealership network, to creating, simulating and testing a solution to the bug on real hardware. This project was my first introduction to professional software development, and I was absolutely hooked on the day-to-day tasks of an embedded software developer. The tasks ranging from code development in MATLAB and C, to build chain tools and software validation by hands-on machine implementation, there was nothing that I did not like about this role. It was an excellent early experience, and more than anyhting else I learned important lessons about working in a close software team environment, including how to use distributed version control software such as Git in a professional setting as well as the Dev-Ops workflow that in common  in workplaces today.
 		</p>
-		<h2>Skills Used</h2>
-		<ul>
+		<div class="skills">
+			<h2>Skills Used</h2>
+		</div>
+		<ul class="skills">
 			<li>MATLAB</li>
 			<li>Simulink</li>
 			<li>C Programming Language</li>
@@ -173,6 +251,8 @@
 			<li>Data Analysis tools</li>
 		</ul>
 	</section>
+
+	<script src="/scripts/projects.js"></script>
 	
 	</body>
 </html>

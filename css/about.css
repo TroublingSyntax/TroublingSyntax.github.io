@@ -1,0 +1,5 @@
+/* Format as float for about me information */
+div.headshot {
+    float: right;
+    margin-left: 100px;
+}

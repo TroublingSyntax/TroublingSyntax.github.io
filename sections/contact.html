@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Kevin Lewis | Engineering Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/img/icons/favicon.ico">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+    <title>Kevin Lewis | Engineering Portfolio</title>
 </head>
 
 <body>
-	<header>
-		<h1>Kevin Lewis <br/> Aerospace Engineering | Mechatronics</h1>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/sections/resume.html">Resume</a>
-			<a href="/sections/projects.html">Projects</a>
-			<a href="/sections/about.html">About</a>
-			<a href="/sections/contact.html">Contact</a>
-		</nav>
-	</header>
-	<h2>Contact</h2>
+    <div class="masthead">
+        <header>
+        <div>
+            <h1 class="masthead">Kevin Lewis</h1>
+            <h2 class="masthead">Aerospace Engineering | Mechatronics</h2>
+        </div>
+        <div>
+            <input id="nav-check" type="checkbox" hidden>
+            <label id="nav-btn" for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-	<p>The best ways to reach me are via email and LinkedIn. Both are listed below.</p>
+            <nav class="masthead">
+                <a href="/">Home</a>
+                <a href="/sections/resume.html">Resume</a>
+                <a href="/sections/projects.html">Projects</a>
+                <a href="/sections/about.html">About</a>
+                <a href="/sections/contact.html">Contact</a>
+            </nav>
+        </div>
+        </header>
+    </div>
 
-	<p>Email: <a href="mailto:lewis799@purdue.edu?subject=Kevin Lewis - Portfolio Website">lewis799@purdue.edu</a></p>
-	<p>LinkedIn: <a href="https://www.linkedin.com/in/kevin-lewis-65096922b">Kevin Lewis</a></p>
-	
+    <h2>Contact</h2>
+
+    <div class="contact-container">
+        <a class="contact-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScOFJCmMT34iFpDgnwkh2acWYpmyXhgWFAfbBHj96gzp8SMgw/viewform" target="_blank">
+            Open Contact Form
+        </a>
+
+		<div class="contact-links">
+			<a href="https://www.researchgate.net/profile/Kevin-Lewis-29" target="_blank" aria-label="ResearchGate">
+				<img src="/img/icons/researchgate.svg" alt="ResearchGate" onerror="this.onerror=null;this.src='https://cdn.simpleicons.org/researchgate/ffffff'">
+			</a>
+			<a href="https://orcid.org/0009-0004-4193-3349" target="_blank" aria-label="ORCID">
+				<img src="/img/icons/orcid.svg" alt="ORCID" onerror="this.onerror=null;this.src='https://cdn.simpleicons.org/orcid/ffffff'">
+			</a>
+			<a href="https://www.linkedin.com/in/kevin-lewis-65096922b" target="_blank" aria-label="LinkedIn">
+				<img src="/img/icons/linkedin.svg" alt="LinkedIn" onerror="this.onerror=null;this.src='https://cdn.simpleicons.org/linkedin/ffffff'">
+			</a>
+		</div>
+
+    </div>
 </body>
 </html>

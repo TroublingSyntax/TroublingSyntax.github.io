@@ -3,20 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- styling -->
+	<link rel="icon" href="/img/icons/favicon.ico">
+	<link rel="stylesheet" href="/css/global.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+	</style>
+
 	<title>Kevin Lewis | Engineering Portfolio</title>
 </head>
 
 <body>
-	<header>
-		<h1>Kevin Lewis <br/> Aerospace Engineering | Mechatronics</h1>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/sections/resume.html">Resume</a>
-			<a href="/sections/projects.html">Projects</a>
-			<a href="/sections/about.html">About</a>
-			<a href="/sections/contact.html">Contact</a>
-		</nav>
-	</header>
+	<div class="masthead">
+		<header>
+		<div>
+			<h1 class="masthead">Kevin Lewis</h1>
+			<h2 class="masthead">Aerospace Engineering | Mechatronics</h2>
+		</div>
+		<div>
+			<input id="nav-check" type="checkbox" hidden>
+			<label id="nav-btn" for="nav-check">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+
+			<nav class="masthead">
+				<a href="/">Home</a>
+				<a href="/sections/resume.html">Resume</a>
+				<a href="/sections/projects.html">Projects</a>
+				<a href="/sections/about.html">About</a>
+				<a href="/sections/contact.html">Contact</a>
+			</nav>
+		</div>
+		</header>
+	</div>
 
 	<h2>Resume</h2>
     <p><a href="/resources/Kevin Lewis Resume.pdf" download>Download Resume PDF</a></p>

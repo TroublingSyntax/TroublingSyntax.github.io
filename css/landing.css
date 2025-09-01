@@ -1,0 +1,74 @@
+#landing-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+    background: #000;
+}
+
+#landing-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(130% 130% at 50% 55%, rgba(0,0,0,0) 55%, rgba(0,0,0,.45) 80%, rgba(0,0,0,.8) 95%, #000 100%);
+    pointer-events: none;
+}
+
+#landing-bg img {
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 18% 82%;
+    opacity: 0;
+    transform: scale(1.16);
+    filter: contrast(1.05) saturate(1.05);
+    animation: landingFade 16s infinite;
+}
+
+#landing-bg img:nth-child(1) { animation-delay: 0s; }
+#landing-bg img:nth-child(2) { animation-delay: 8s; }
+
+@keyframes landingFade {
+    0%   { opacity: 0; transform: scale(1.12); }
+    8%   { opacity: 0.85; }
+    42%  { opacity: 0.85; }
+    50%  { opacity: 0; }
+    100% { opacity: 0; transform: scale(1.12); }
+}
+
+body > p {
+    max-width: clamp(300px, 30vw, 520px);
+    margin-left: auto;
+    text-align: right;
+    line-height: 1.6;
+    z-index: 1;
+    position: relative;
+}
+
+@media (max-width: 900px) {
+    #landing-bg { right: 0; }
+    body > p { max-width: 92vw; text-align: left; margin: 1rem auto 0; }
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        linear-gradient(to bottom, #000 0 120px, rgba(0,0,0,.85) 220px, rgba(0,0,0,0) 520px),
+        linear-gradient(to left,  #000 0 26vw,  rgba(0,0,0,.85) 32vw,  rgba(0,0,0,0) 48vw);
+}
+
+h1, nav, body > p { position: relative; z-index: 1; }
+
+@media (max-width: 900px) {
+    body::after {
+        background:
+            linear-gradient(to bottom, #000 0 96px, rgba(0,0,0,.8) 160px, rgba(0,0,0,0) 380px),
+            linear-gradient(to left,  #000 0 8vw,  rgba(0,0,0,.6) 14vw,  rgba(0,0,0,0) 36vw);
+    }
+}
